@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ 
+header{
+    background-color: orangered;
+    height: 120px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(red, orangered, orange);
+}
+
+
+
+div.b{
+    width: 85%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+}
+
+div.b > a{
+    color: white;
+    text-decoration: none;
+}
+
+div.mid{
+    height: 75px;
+    /* background-color: aqua; */
+    width: 85%;
+    margin: 0px auto;
+}
+
+div.mid img{
+    height: inherit;
+}
+
+section.hero{
+    width: 85%;
+    margin: 0px auto;
+}
+
+
+div.emot a{
+    font-size: 20pt;
+    padding: 30px;
+    display: inline-block;
+    text-align: center;
+    height: 30pt;
+    width: 30pt;
+    line-height: 5pt;
+    /* background-color: grey; */
+    border-radius: 15pt;
+    cursor: pointer;
+    margin-right: 52px;
+}
+        
+.item1{ grid-area: header;}
+.item2 { grid-area: menu;}
+.item3{ grid-area: main;}
+.container > div{
+    /* background-color: green; */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'header header header menu menu menu'
+    'header header header menu menu menu'
+    'header header header main main main ';
+    gap: 10px;
+    /* background-color: blue; */
+    padding: 1px;
+}
+div.item1{
+    background-image: url(assets/p.jpg);
+    background-size: 120%;
+}
+div.item2{
+    background-image: url(assets/p1.jpg);
+}
+div.item3{
+    background-image: url(assets/p2.png);
+}
